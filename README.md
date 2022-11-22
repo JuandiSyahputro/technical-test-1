@@ -1,4 +1,4 @@
-Ini adalah project technical test 1, mohon maaf jika masih banyak kekurangan dalam tampilan. Karena saya pemula jadi belum terlalu paham dan membutuhkan waktu yang untuk menampilkan semuanya. Terimakasih
+Ini adalah project technical test 1, mohon maaf jika masih banyak kekurangan dalam tampilan dikarenakan saya kehabisan waktu. Karena saya pemula jadi belum terlalu paham dan membutuhkan waktu yang lebih untuk menampilkan semuanya. Terimakasih
 
 
 
