@@ -1,5 +1,10 @@
 Ini adalah project technical test 1, mohon maaf jika masih banyak kekurangan dalam tampilan dikarenakan saya kehabisan waktu. Karena saya pemula jadi belum terlalu paham dan membutuhkan waktu yang lebih untuk menampilkan semuanya. Terimakasih
 
+![image](https://user-images.githubusercontent.com/102186170/203337847-3933120e-c204-48c0-b015-1d7092d1495f.png)
+
+
+![image](https://user-images.githubusercontent.com/102186170/203337951-120ac221-08e3-425c-a7a9-ad3b023ab069.png)
+
 
 
 
