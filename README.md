@@ -1,3 +1,9 @@
+Ini adalah project technical test 1, mohon maaf jika masih banyak kekurangan dalam tampilan. Karena saya pemula jadi belum terlalu paham dan membutuhkan waktu yang untuk menampilkan semuanya. Terimakasih
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
