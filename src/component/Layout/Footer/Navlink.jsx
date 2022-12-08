@@ -5,27 +5,27 @@ import Location from '../../../../public/img/Footer/location.svg';
 import Image from 'next/image';
 
 const Navlink = () => {
-  const Links1 = [
-    {
-      firstname: 'Perusahaan',
-    },
-    {
-      name: 'Tentang',
-      link: '/',
-    },
-    {
-      name: 'Karir',
-      link: '/',
-    },
-    {
-      name: 'Kontak Kami',
-      link: '/',
-    },
-    {
-      name: 'Blog',
-      link: '/',
-    },
-  ];
+  const Links1 = {
+    firstname: 'Perusahaan',
+    menu: [
+      {
+        name: 'Tentang',
+        link: '/',
+      },
+      {
+        name: 'Karir',
+        link: '/',
+      },
+      {
+        name: 'Kontak Kami',
+        link: '/',
+      },
+      {
+        name: 'Blog',
+        link: '/',
+      },
+    ],
+  };
   const Links2 = [
     {
       firstname: 'Panduan',
@@ -82,48 +82,58 @@ const Navlink = () => {
                 <FaTwitter />
               </span>
               <div className="mt-5 flex">
-                <Image src={Location} className="mr-2" width={15} />
+                <Image
+                  src={Location}
+                  className="mr-2"
+                  width="auto"
+                  alt="Picture"
+                />
                 <p className="font-medium">White House Valley</p>
               </div>
             </div>
           </div>
         </div>
-        <div className=" md:w-1/4">
-          {Links1.map((item) => (
-            <div className="w-full py-3 pl-3">
-              <div className="font-bold">{item.firstname}</div>
-              <div className="hover:bg-[#8D95FE] hover:px-2 hover:text-white ">
-                <Link href={`${item.link}`} className="font-medium">
+        <ul className=" md:w-1/4">
+          <h5 className="font-bold">{Links1.firstname}</h5>
+          {Links1.menu.map((item, idx) => {
+            return (
+              <li key={idx} className="w-full py-3 pl-3 ">
+                <Link
+                  href={`${item.link}`}
+                  className="w-full font-medium hover:bg-[#8D95FE] hover:px-2 hover:py-2 hover:text-white"
+                >
                   {item.name}
                 </Link>
-              </div>
-            </div>
+              </li>
+            );
+          })}
+        </ul>
+        <ul className="md:w-1/4">
+          {Links2.map((item, idx) => (
+            <li key={idx} className="py-3 pl-3 ">
+              <h5 className="font-bold">{item.firstname}</h5>
+              <Link
+                href={`${item.link}`}
+                className="w-full font-medium hover:bg-[#8D95FE] hover:px-2 hover:py-2 hover:text-white"
+              >
+                {item.name}
+              </Link>
+            </li>
           ))}
-        </div>
-        <div className="md:w-1/4">
-          {Links2.map((item) => (
-            <div className="py-3 pl-3">
-              <div className="font-bold">{item.firstname}</div>
-              <div className="hover:bg-[#8D95FE] hover:px-2 hover:text-white">
-                <Link href={`${item.link}`} className="font-medium">
-                  {item.name}
-                </Link>
-              </div>
-            </div>
+        </ul>
+        <ul className=" md:w-1/4">
+          {Links3.map((item, idx) => (
+            <li key={idx} className="py-3 pl-3">
+              <h5 className="font-bold">{item.firstname}</h5>
+              <Link
+                href={`${item.link}`}
+                className="font-medium hover:bg-[#8D95FE] hover:px-2 hover:py-2 hover:text-white"
+              >
+                {item.name}
+              </Link>
+            </li>
           ))}
-        </div>
-        <div className=" md:w-1/4">
-          {Links3.map((item) => (
-            <div className="py-3 pl-3">
-              <div className="font-bold">{item.firstname}</div>
-              <div className="hover:bg-[#8D95FE] hover:px-2 hover:text-white">
-                <Link href={`${item.link}`} className="font-medium">
-                  {item.name}
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
+        </ul>
       </div>
       <article className="mt-10 mb-5">
         <p className="text-center font-semibold">

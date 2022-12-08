@@ -37,7 +37,7 @@ const Kolaborasi = () => {
         </div>
         <div className=" mx-auto mt-10 flex-wrap px-3 lg:mt-60 lg:w-1/3">
           <div className="absolute -mt-44 -ml-5 hidden lg:flex">
-            <Image src={Line} alt="picture" className="" />
+            <Image src={Line} alt="picture" />
           </div>
           <article className="">
             <p className="text-justify text-base">

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import Icon from '../../../public/img/Hero/kotak.svg';
 import Icon2 from '../../../public/img/Hero/icon.svg';
 
 const Hero = () => {
@@ -23,10 +22,16 @@ const Hero = () => {
         </div>
         <div className="mt-5 md:w-1/2 ">
           <div>
-            <Image src={Icon} alt="Picture" />
+            <Image
+              src="/img/Hero/kotak.svg"
+              alt="Picture"
+              width={500}
+              height={300}
+              priority={true}
+            />
           </div>
           <div className="z-10 -mt-60 sm:-mt-80">
-            <Image src={Icon2} alt="Picture" width={500} />
+            <Image src={Icon2} alt="Picture" width={500} height="auto" />
           </div>
         </div>
       </div>
